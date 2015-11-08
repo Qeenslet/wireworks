@@ -1,0 +1,288 @@
+body {
+margin: 0;
+padding: 0;
+}
+#header {
+height: 200px;
+background: url(/media/img/fon.jpg);
+}
+.logo {
+float: left;
+height: 180px;
+}
+.logo_h1 {
+position: relative;
+top:70px;
+left:35px;
+font-family: 'Marck Script', cursive;
+font-size: 36px;
+}
+.motto {
+position: relative;
+top: 70px;
+left: 80px;
+font-family: 'Marck Script', cursive;
+font-size: 30px;
+}
+.logotext {
+float: right;
+padding: 5px;
+}
+.logotext a {
+text-decoration: none;
+color: black;
+}
+.logotext a:hover {
+color: gray;
+}
+.topmenu {
+display: -moz-box;
+display: -webkit-flex;
+display: flex;
+width: 100%;
+margin: 0 auto;
+flex-direction: row;
+}
+.topmenu a {
+display: block;
+-moz-box-flex: 1;
+-webkit-flex: 1;
+flex: 1;
+font-size: 18px;
+padding: 10px;
+color: black;
+background: white;
+text-align: center;
+text-decoration: none;
+}
+.topmenu a:hover {
+background: #ccc;
+}
+.menu a {
+width: 100%;
+display: block;
+margin-bottom: 2px;
+margin-top: 2px;
+}
+.content {
+text-align: justify;
+}
+#top-banner {
+margin: 5px;
+position: relative; /*Для того чтобы можно было задать высоту управляющих элеиентов в JQuery для фотографии в 100% высоты. Применяется к родителю!*/
+}
+.control_right {
+position: absolute;
+right:0px;
+width: 20%;
+height: 100%; 
+}
+.control_left {
+position: absolute;
+left:0px;
+width: 20%;
+height: 100%; 
+}
+.control_button_left {
+position:absolute;
+left:0px;
+top:47%;
+width:40px;
+height:40px;
+background-image: url(/media/img/control_left.png);
+display: none;
+}
+.control_button_right {
+position:absolute;
+right:0px;
+top:47%;
+width:40px;
+height:40px;
+background-image: url(/media/img/control_right.png);
+display: none;
+}
+.control_button_left a, .control_button_right a {
+display: block; /*Эти свойства растягивают ссылку на весь родительский блок*/
+height: 100%;
+text-decoration: none;
+outline: none;
+}
+.product-options {
+    font-family: 'Marck Script', cursive;
+    font-size: 2.5em;
+    white-space: normal;
+}
+.product-price {
+    font-family: 'Marck Script', cursive;
+    font-size: 3.5em;
+    white-space: normal;
+}
+.total {
+text-align: right;
+font-weight: bold;
+}
+.total-summ {
+font-size: 22px;
+font-weight: bold;
+}
+.registration {
+font-weight: bold;
+color: gray;
+}
+.register {
+margin: 5px;
+}
+#listing {
+
+}
+#listing a{
+text-decoration: none;
+color: black;
+}
+
+#listing .img-rounded {
+max-height: 100%;
+max-width: 100%;
+margin: 10px;
+}
+#listing .img-rounded:hover {
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.description  a {
+text-decoration: none;
+color: black;
+}
+.wkdisp {
+display: block;
+float: left;
+margin: 10px;
+vertical-align: 15px;
+width: 100%;
+height: 10%;
+}
+#jquery-overlay {
+background:black;
+opacity:0.7;
+position:fixed;
+height:100%;
+width:100%;
+top:0;
+left:0;
+}
+.modal-window {
+position:absolute;
+top: 50%;
+border:solid 1px olive;
+box-shadow: 1px 1px 1px black;
+background:white;
+padding:10px;
+border-radius:5px;
+z-index:99;
+left:50%;
+transform: translate(-50%, -50%);
+}
+.modal_header {
+font-family: 'Marck Script', cursive;
+text-align: center;
+font-size: 2.5em;
+white-space: normal;
+}
+.modal_sub {
+font-family: 'Marck Script', cursive;
+font-size: 1.8em;
+}
+.modal_sub:hover {
+text-shadow: 1px 1px 3px #666, -1px -1px 3px #FFF, 1px 1px #666, -1px -1px #FFF;
+}
+.modal-window img {
+margin: auto;
+max-width: 100%;
+max-height: 100%;
+}
+.modal-close-btn {
+position:absolute;
+top:1px;
+right:1px;
+margin:0;
+padding:0;
+text-decoration: none;
+color:black;
+font-size:18px;
+}
+.modal-close-btn:hover {
+text-decoration: none;
+color: red;
+}
+.modal-close-btn:before {
+position:relative;
+top:-1px;
+font-size:12px;
+}
+.single_sub {
+font-family: 'Marck Script', cursive;
+font-size: 1.8em;
+}
+.sigle_item {
+width: 100%;
+}
+.single_item img{
+margin: 5px;
+}
+#scroll-bar {
+overflow: auto;
+}
+.price {
+font-size: 19px;
+}
+.wjsbs {
+width: auto;
+height: 50%;
+max-height: 200px;
+}
+#footer {
+padding-top: 20px;
+padding-bottom: 20px;
+background: white;
+border-top: 2px solid black;
+}
+#footer p {
+margin: 10px;
+text-align: center;
+}
+#footer a {
+text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+.topmenu {
+flex-direction: column;
+}
+.logo {
+display: none;
+}
+#header {
+height: 100px;
+}
+.logo_h1 {
+display: none;
+}
+.motto {
+display: none;    
+}
+.modal_header {
+display: none;
+}
+.modal-window {
+position:fixed;
+top: 50%;
+margin-left:-25%;
+border:solid 1px olive;
+box-shadow: 1px 1px 1px black;
+background:white;
+padding:10px;
+border-radius:5px;
+z-index:99;
+left:70%;
+width: 80%;
+}
+}
